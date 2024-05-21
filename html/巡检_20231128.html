@@ -1,0 +1,111 @@
+
+    <!doctype html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>巡检报告</title>
+        <style type="text/css">
+            .table_css table{
+                border-collapse: collapse;
+                width:100%;
+                border:1px solid #B8B8B8 !important;
+                margin-bottom:20px;
+            }
+            .table_css th{
+                background-color:#DDEEFF !important;
+                padding:5px 9px;
+                font-size:14px;
+                font-weight:normal;
+                text-align:center;
+            }
+            .table_css td{
+                padding:5px 9px;
+                font-size:12px;
+                font-weight:normal;
+                text-align:center;
+                word-break: break-all;
+            }
+            .table_css tr:nth-child(odd){
+                background-color:#FFFFFF !important;
+            }
+            .table_css tr:nth-child(even){
+                background-color: #E6E6E6 !important;
+            }
+        </style>
+    </head>
+    <body>
+    <h3  class="textCetent">巡检报告</h3>
+    <div class="table_css">
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>巡检分类</th>
+      <th>巡检项</th>
+      <th>巡检标准</th>
+      <th>巡检结果判断</th>
+      <th>图表ID</th>
+      <th>巡检结果图片</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>EMQTT</td>
+      <td>连接数</td>
+      <td>连接数<30000</td>
+      <td>绿色正常，橙色警告，红色异常</td>
+      <td>6</td>
+      <td><img src="https://grafana-pics.obs.cn-south-1.myhuaweicloud.com/daily_reports/20231128/6.png" width="200" /></td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Marathon-lb</td>
+      <td>连接数</td>
+      <td>连接数<8000</td>
+      <td>绿色正常，橙色警告，红色异常</td>
+      <td>40</td>
+      <td><img src="https://grafana-pics.obs.cn-south-1.myhuaweicloud.com/daily_reports/20231128/40.png" width="200" /></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Kafka</td>
+      <td>消息堆积数</td>
+      <td>堆积数<300000</td>
+      <td>绿色正常，橙色警告，红色异常</td>
+      <td>46</td>
+      <td><img src="https://grafana-pics.obs.cn-south-1.myhuaweicloud.com/daily_reports/20231128/46.png" width="200" /></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>DCOS</td>
+      <td>CPU使用率</td>
+      <td>使用率不超过90%</td>
+      <td>绿色正常，橙色警告，红色异常</td>
+      <td>12</td>
+      <td><img src="https://grafana-pics.obs.cn-south-1.myhuaweicloud.com/daily_reports/20231128/12.png" width="200" /></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>DCOS</td>
+      <td>内存使用率</td>
+      <td>使用率不超过90%</td>
+      <td>绿色正常，橙色警告，红色异常</td>
+      <td>14</td>
+      <td><img src="https://grafana-pics.obs.cn-south-1.myhuaweicloud.com/daily_reports/20231128/14.png" width="200" /></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>DCOS</td>
+      <td>磁盘使用率</td>
+      <td>使用率不超过90%</td>
+      <td>绿色正常，橙色警告，红色异常</td>
+      <td>26</td>
+      <td><img src="https://grafana-pics.obs.cn-south-1.myhuaweicloud.com/daily_reports/20231128/26.png" width="200" /></td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    </body>
+    </html>
+    
